@@ -1,9 +1,9 @@
 ---
-name: html-readme-architect
+name: html-readme
 description: Rule.11（HTML-Firstポリシー）に準拠した、Mermaidや外部CDNを一切使わない完全自己完結型・高品質技術仕様書および「README.html」の作成規約・設計標準スキル。モダンなライトモードデザインシステム（CSS Grid/Flexbox + インラインSVGベクター図解）と10標準セクション構成パターンを提供。
 ---
 
-# html-readme-architect
+# html-readme
 
 Rule.11（HTML-Firstポリシー & ネイティブビジュアル標準）に完全準拠した、**完全自己完結型 HTML 技術仕様書・`README.html`** を作成するための専門スキルです。
 

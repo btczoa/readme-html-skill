@@ -1,13 +1,13 @@
 {
-  "name": "html-readme-architect",
+  "name": "html-readme",
   "version": "1.0.0",
   "description": "Rule.11 (HTML-First Policy) compliant standalone technical documentation and README.html generator with zero external scripts/CDN",
   "author": "custom",
-  "entry": "skills/html-readme-architect/SKILL.md",
+  "entry": "skills/html-readme/SKILL.md",
   "skills": [
     {
-      "name": "html-readme-architect",
-      "path": "skills/html-readme-architect",
+      "name": "html-readme",
+      "path": "skills/html-readme",
       "description": "Rule.11準拠の完全自己完結型HTML技術仕様書・README.html作成専門スキル（Mermaid完全排除、インラインSVG、モダンライトモード10章構成）"
     }
   ]

@@ -1,6 +1,6 @@
 # readme-html-skill
 
-`html-readme-architect` スキルを別 PC やチーム環境に `npx skills add` で 1 コマンド導入するための配布用 Git リポジトリです。
+`html-readme` スキルを別 PC やチーム環境に `npx skills add` で 1 コマンド導入するための配布用 Git リポジトリです。
 
 ---
 
@@ -24,7 +24,7 @@ npx skills add btczoa/readme-html-skill
 
 または明示的にスキル名を指定する場合：
 ```bash
-npx skills add btczoa/readme-html-skill --skill html-readme-architect
+npx skills add btczoa/readme-html-skill --skill html-readme
 ```
 
 ### 2. ローカル環境からの検証・追加
@@ -41,7 +41,7 @@ npx skills add ./path/to/readme-html-skill
 npx skills list
 
 # スキルの実行確認
-npx skills run html-readme-architect
+npx skills run html-readme
 ```
 
 ---
@@ -54,6 +54,6 @@ readme-html-skill/
 ├── skill.json                     # スキル定義マニフェスト
 ├── SKILL.md                       # ルート定義
 └── skills/
-    └── html-readme-architect/     # スキル本体
+    └── html-readme/               # スキル本体
         └── SKILL.md               # スキル仕様・プロンプト定義（CSSトークン、SVG規約、10大セクション構成等）
 ```
