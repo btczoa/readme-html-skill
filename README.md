@@ -1,4 +1,4 @@
-# html-readme-architect-skill
+# readme-html-skill
 
 `html-readme-architect` スキルを別 PC やチーム環境に `npx skills add` で 1 コマンド導入するための配布用 Git リポジトリです。
 
@@ -19,17 +19,17 @@ Rule.11（HTML-Firstポリシー & ネイティブビジュアル標準）に完
 
 ### 1. GitHub リポジトリから直接インストール
 ```bash
-npx skills add <GITHUB_USER>/<REPO_NAME>
+npx skills add btczoa/readme-html-skill
 ```
 
 または明示的にスキル名を指定する場合：
 ```bash
-npx skills add <GITHUB_USER>/<REPO_NAME> --skill html-readme-architect
+npx skills add btczoa/readme-html-skill --skill html-readme-architect
 ```
 
 ### 2. ローカル環境からの検証・追加
 ```bash
-npx skills add ./path/to/html-readme-architect-skill
+npx skills add ./path/to/readme-html-skill
 ```
 
 ---
@@ -49,7 +49,7 @@ npx skills run html-readme-architect
 ## ディレクトリ構成
 
 ```text
-html-readme-architect-skill/
+readme-html-skill/
 ├── README.md
 ├── skill.json                     # スキル定義マニフェスト
 ├── SKILL.md                       # ルート定義
