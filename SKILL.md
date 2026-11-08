@@ -1,9 +1,9 @@
 ---
-name: html-readme
+name: html-readme-architect
 description: Rule.11（HTML-Firstポリシー）に準拠した、Mermaidや外部CDNを一切使わない完全自己完結型・高品質技術仕様書および「README.html」の作成規約・設計標準スキル。モダンなライトモードデザインシステム（CSS Grid/Flexbox + インラインSVGベクター図解）と10標準セクション構成パターンを提供。
 ---
 
-# html-readme
+# html-readme-architect
 
 Rule.11（HTML-Firstポリシー & ネイティブビジュアル標準）に完全準拠した、**完全自己完結型 HTML 技術仕様書・`README.html`** を作成するための専門スキルです。
 
@@ -74,6 +74,13 @@ Rule.11（HTML-Firstポリシー & ネイティブビジュアル標準）に完
 ## 4. インライン SVG アーキテクチャ図の作成規約
 
 Mermaid を使わずに、美しく保守性の高いSVG図を作成するための設計ルールです。
+
+### Diagram Generation Style Guidelines (Architecture / Infographics)
+When generating architecture diagrams, workflow charts, or system visual assets:
+1. **Layout**: Adapt the layout flexibly (vertical top-down, horizontal left-to-right, or modular grid) based on system hierarchy, data flow, and readability requirements, using clear directional connectors/arrows.
+2. **Aesthetics**: Clean, minimalist vector style with a solid white background. No cluttered elements or excessive gradients.
+3. **Color Coding**: Use a harmonious tech palette (vibrant blue, soft purple, fresh green) where each architectural layer has a distinct, consistent color.
+4. **Typography & Icons**: Every card must feature a bold, legible title, a smaller secondary description, and a minimalist line-art icon on the left.
 
 ### 4.1. `<svg>` ラッパーと viewBox
 - `viewBox="0 0 1000 480"` などの比率を固定し、CSSで `width: 100%; height: auto; max-width: 1100px;` を指定して完全レスポンシブ化する。
