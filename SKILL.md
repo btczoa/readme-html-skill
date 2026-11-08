@@ -77,10 +77,14 @@ Mermaid を使わずに、美しく保守性の高いSVG図を作成するため
 
 ### Diagram Generation Style Guidelines (Architecture / Infographics)
 When generating architecture diagrams, workflow charts, or system visual assets:
-1. **Layout**: Adapt the layout flexibly (vertical top-down, horizontal left-to-right, or modular grid) based on system hierarchy, data flow, and readability requirements, using clear directional connectors/arrows.
-2. **Aesthetics**: Clean, minimalist vector style with a solid white background. No cluttered elements or excessive gradients.
-3. **Color Coding**: Use a harmonious tech palette (vibrant blue, soft purple, fresh green) where each architectural layer has a distinct, consistent color.
-4. **Typography & Icons**: Every card must feature a bold, legible title, a smaller secondary description, and a minimalist line-art icon on the left.
+1. **Dual Architecture Diagram Standard (Rule.14)**:
+   - システム構成セクション（Chapter 02）では、必ず以下の **2種類の図を対（ペア）として作成・配置** すること。
+     - **① ハイレベル論理アーキテクチャ図**: ユーザー、クライアントSPA、APIゲートウェイ/プロキシ、バックエンドAIモデル群、ユースケース別データフロー。
+     - **② インフラ・ネットワークレベル物理アーキテクチャ図**: 実行ランタイム（V8 Isolate / Docker）、暗号化境界（TLS）、ポート番号（443, 8000等）、ネットワーク境界（Public / ngrok トンネル / VPC）、認証トークン伝送経路。
+2. **Layout**: Adapt the layout flexibly (vertical top-down, horizontal left-to-right, or modular grid) based on system hierarchy, data flow, and readability requirements, using clear directional connectors/arrows.
+3. **Aesthetics**: Clean, minimalist vector style with a solid white background. No cluttered elements or excessive gradients.
+4. **Color Coding**: Use a harmonious tech palette (vibrant blue, soft purple, fresh green) where each architectural layer has a distinct, consistent color.
+5. **Typography & Icons**: Every card must feature a bold, legible title, a smaller secondary description, and a minimalist line-art icon on the left.
 
 ### 4.1. `<svg>` ラッパーと viewBox
 - `viewBox="0 0 1000 480"` などの比率を固定し、CSSで `width: 100%; height: auto; max-width: 1100px;` を指定して完全レスポンシブ化する。
