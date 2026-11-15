@@ -2,7 +2,7 @@
 set -euo pipefail
 
 SKILL_NAME="html-readme-architect"
-REPO_RAW_URL="https://raw.githubusercontent.com/btczoa/html-readme-architect-skill/main/SKILL.md"
+REPO_RAW_URL="https://raw.githubusercontent.com/btczoa/readme-html-skill/main/SKILL.md"
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 TMP_DIR=""
@@ -36,14 +36,14 @@ declare -A AGENT_RULE_FILES=(
   ["codex"]="${HOME}/.codex/AGENTS.md"
 )
 
-RULE_START="<!-- html-readme-architect-skill:start -->"
-RULE_END="<!-- html-readme-architect-skill:end -->"
+RULE_START="<!-- readme-html-skill:start -->"
+RULE_END="<!-- readme-html-skill:end -->"
 
 read -r -d '' RULE_BLOCK << 'EOF' || true
-<!-- html-readme-architect-skill:start -->
+<!-- readme-html-skill:start -->
 ## html-readme-architect Standard (`html-readme-architect`)
 When handling tasks matching `html-readme-architect` (Create standalone light-mode HTML technical specifications and README.html without Mermaid/external CDNs.), you MUST read and strictly follow `${SKILL_NAME}/SKILL.md` before writing any output.
-<!-- html-readme-architect-skill:end -->
+<!-- readme-html-skill:end -->
 EOF
 
 upsert_rule() {
